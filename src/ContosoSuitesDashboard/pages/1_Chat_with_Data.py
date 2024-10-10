@@ -20,7 +20,7 @@ def create_chat_completion(messages):
         azure_endpoint = aoai_endpoint
     )
     # Create and return a new chat completion request
-       return client.chat.completions.create(
+    return client.chat.completions.create(
         model=aoai_deployment_name,
         messages=[
             {"role": m["role"], "content": m["content"]}
